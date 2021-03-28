@@ -15,17 +15,17 @@
 <body>
     <div class="container">
         <h2>Submitted Info</h2>
-        <p>Name: {{name}}</p>
-        <p>Dojo Location: {{location}}</p>
+        <p>Name: {{result.name}}</p>
+        <p>Dojo Location: {{result.location}}</p>
         <p>Favorite Languages: 
-            {% for lang in languages %}
+            {% for lang in result.languages %}
                 <li>{{lang}}</li>
             {% endfor %}
         </p>
-        <p>Are You Enjoying The Course?: {{answer}}</p>
-        <p>Comment: {{comment}}</p>
+        <p>Are You Enjoying The Course?: {{result.answer}}</p>
+        <p>Comment: {{result.comment}}</p>
         <div class="text-right">
-            <button type="submit" class="btn btn-info">Go Back</button>
+            <a href="/" class="btn btn-info">Go Back</a>
         </div>
     </div>
 </body>
